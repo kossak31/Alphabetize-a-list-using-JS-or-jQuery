@@ -11,14 +11,14 @@ listitems.sort(function(a, b) {
 $.each(listitems, function(idx, itm) {
   mylist.append(itm);
 });
-
-var parent = document.getElementById("subcategories"),
-// take items (parent.children) into array
-itemsArray = Array.prototype.slice.call(parent.children);
 ```
 
 ## javascript vanilla
 ```javascript
+var parent = document.getElementById("subcategories"),
+// take items (parent.children) into array
+itemsArray = Array.prototype.slice.call(parent.children);
+
 // sort items in array by custom criteria
 itemsArray.sort(function(a, b) {
   // inner text suits best (even when formated somehow)
